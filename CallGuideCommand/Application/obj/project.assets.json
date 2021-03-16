@@ -775,11 +775,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideCommand\\Application\\Application.csproj",
+      "projectUniqueName": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideCommand\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideCommand\\Application\\Application.csproj",
+      "projectPath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideCommand\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\soysa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideCommand\\Application\\obj\\",
+      "outputPath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideCommand\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\soysa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -796,11 +796,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideCommand\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideCommand\\Domain\\Domain.csproj"
+            "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideCommand\\Domain\\Domain.csproj": {
+              "projectPath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideCommand\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideCommand\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideCommand\\Infrastructure\\Infrastructure.csproj"
+            "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideCommand\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideCommand\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

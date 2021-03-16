@@ -748,11 +748,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Application\\Application.csproj",
+      "projectUniqueName": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Application\\Application.csproj",
+      "projectPath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\soysa\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Application\\obj\\",
+      "outputPath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\soysa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -769,11 +769,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Domain\\Domain.csproj"
+            "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Domain\\Domain.csproj": {
+              "projectPath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Infrastructure\\Infrastructure.csproj"
+            "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }

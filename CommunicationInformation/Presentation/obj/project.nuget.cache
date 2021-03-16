@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P0q0pfLzvZ4NlK5LKlcI7hq4eRA193ekb4yyYegjU8rwg4gRhGHHM6ZQc6oxu4Txc5bNaBfGmNd8A5br6+fNEg==",
+  "dgSpecHash": "iUEKbSUM80h5/NOZ1fZgzkJw8g9RXSI1EQizzyTUFqnv+uViD0Hb+iwjfxK/oFg2PDoWMhWE+lx0UFGirO39iA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Presentation\\Presentation.csproj",
+  "projectFilePath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\soysa\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\soysa\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",

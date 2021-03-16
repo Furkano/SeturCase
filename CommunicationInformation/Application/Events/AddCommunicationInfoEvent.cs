@@ -1,4 +1,4 @@
-namespace Application.Events
+namespace Setur.Events
 {
     public class AddCommunicationInfoEvent
     {

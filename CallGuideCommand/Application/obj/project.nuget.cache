@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LCNbgDoe/7fC7i5Jfy2oAWYzhe76M5XkX2j1X0NMtk6GqCH1MoZbl5gp/vpFXEVMBOTrKzVmzqnYfFxLAMITfQ==",
+  "dgSpecHash": "6xWNS568+ee8AvPfqUIq4Crpq0bmjKrdx2MV6uUDdQ9IdCOSvl1d6Q/voKZvZ45DOJFQkCm9MRGBWCCGEfWYxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideCommand\\Application\\Application.csproj",
+  "projectFilePath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideCommand\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\soysa\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\soysa\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\9.0.0\\mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512",

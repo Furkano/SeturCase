@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xWou1vd4nJEU2gvLeH7WLoZdevV8kR+o6PaoChRNvXXOvZzNe3Vi8HUGvnM0/sxvFa09VfSkFTmsvW0Rz0msRg==",
+  "dgSpecHash": "4cfThf0DWTBBHeWk8Z+ZqrubYxztKeJaStvqNVDMjC6Nh1DR28I6EO3jUVxdWV8GN0k7Yr5yReO+WRv4TNZ/yQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Application\\Application.csproj",
+  "projectFilePath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\soysa\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
     "C:\\Users\\soysa\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.2\\microsoft.entityframeworkcore.5.0.2.nupkg.sha512",
