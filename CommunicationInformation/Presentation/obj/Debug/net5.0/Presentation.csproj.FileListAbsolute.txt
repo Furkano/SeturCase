@@ -44,3 +44,15 @@ C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Presentati
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Presentation\obj\Debug\net5.0\Presentation.pdb
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Presentation\obj\Debug\net5.0\Presentation.genruntimeconfig.cache
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Presentation\bin\Debug\net5.0\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Presentation\bin\Debug\net5.0\Automatonymous.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Presentation\bin\Debug\net5.0\GreenPipes.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Presentation\bin\Debug\net5.0\Mapster.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Presentation\bin\Debug\net5.0\Mapster.Core.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Presentation\bin\Debug\net5.0\MassTransit.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Presentation\bin\Debug\net5.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Presentation\bin\Debug\net5.0\MassTransit.RabbitMqTransport.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Presentation\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Presentation\bin\Debug\net5.0\NewId.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Presentation\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Presentation\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Presentation\bin\Debug\net5.0\RabbitMQ.Client.dll

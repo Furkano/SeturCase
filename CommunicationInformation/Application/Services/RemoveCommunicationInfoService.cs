@@ -4,9 +4,12 @@ using System.Threading.Tasks;
 using Application.Requests;
 using Domain.Entity;
 using Domanin.Interfaces;
+using Mapster;
+using MassTransit;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
+using Setur.Events;
 
 namespace Application.Services
 {
@@ -14,14 +17,17 @@ namespace Application.Services
     {
         private readonly ICommunicationInfoPostgresRepository<CommunicationInfo> repository;
         private readonly ILogger<RemoveCommunicationInfoService> logger;
+        private readonly IBus bus;
 
         public RemoveCommunicationInfoService(
             ICommunicationInfoPostgresRepository<CommunicationInfo> _repository,
-            ILogger<RemoveCommunicationInfoService> _logger
+            ILogger<RemoveCommunicationInfoService> _logger,
+            IBus _bus
         )
         {
             repository = _repository ?? throw new ArgumentNullException(nameof(_repository));
             logger = _logger ?? throw new ArgumentNullException(nameof(_logger));
+            bus = _bus ?? throw new ArgumentNullException(nameof(_bus));
         }
         public async Task<bool> Handle(RemoveCommunicationInfoRequest request, CancellationToken cancellationToken)
         {
@@ -32,6 +38,7 @@ namespace Application.Services
                 if(info!=null){
                     var result = await repository.Delete(info);
                     if(result){
+                        await bus.Publish(info.Adapt<RemoveCommunicationInfoEvent>(),cancellationToken);
                         return true;
                     }
                     else

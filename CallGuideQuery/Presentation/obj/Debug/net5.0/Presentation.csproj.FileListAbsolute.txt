@@ -51,3 +51,15 @@ C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Presentation\bin\Deb
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Presentation\bin\Debug\net5.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Presentation\bin\Debug\net5.0\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Presentation\bin\Debug\net5.0\System.Diagnostics.DiagnosticSource.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Presentation\bin\Debug\net5.0\Automatonymous.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Presentation\bin\Debug\net5.0\GreenPipes.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Presentation\bin\Debug\net5.0\Mapster.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Presentation\bin\Debug\net5.0\Mapster.Core.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Presentation\bin\Debug\net5.0\MassTransit.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Presentation\bin\Debug\net5.0\MassTransit.ExtensionsDependencyInjectionIntegration.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Presentation\bin\Debug\net5.0\MassTransit.RabbitMqTransport.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Presentation\bin\Debug\net5.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Presentation\bin\Debug\net5.0\NewId.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Presentation\bin\Debug\net5.0\Newtonsoft.Json.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Presentation\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Presentation\bin\Debug\net5.0\RabbitMQ.Client.dll

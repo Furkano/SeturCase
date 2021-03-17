@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "KOptDFZ7YFk9sFG+SaklT3OaSgQKv+b5/rqnG3pBwpe7IjTWWTx45cTfemgTDFsiJ8Jip4jJBfa2SuN1c8wLCA==",
+  "dgSpecHash": "e2DYKAc9tl4cDkOFBcmrSwalidE7D5lw/m07CJQJ8tirjc9qi9FMThTFHzHu8cZzO99PcRIFgYEFzI/YYs5SBg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CommunicationInformation\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\soysa\\.nuget\\packages\\microsoft.entityframeworkcore\\5.0.2\\microsoft.entityframeworkcore.5.0.2.nupkg.sha512",
     "C:\\Users\\soysa\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\5.0.2\\microsoft.entityframeworkcore.abstractions.5.0.2.nupkg.sha512",

@@ -2,8 +2,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Application.Consumers;
 using Domain.Interfaces;
 using Infrastructure.Repository;
+using MassTransit;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -40,6 +42,33 @@ namespace Presentation
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CallGuideQuery Presentation", Version = "v1" });
+            });
+
+            services.AddMassTransit(config=>{
+                config.UsingRabbitMq((context,config2) =>
+                {
+                    config2.Host(new Uri(Configuration["RabbitMQConf:Uri"]),
+                    auth=>{
+                        auth.Username(Configuration["RabbitMQConf:Username"]);
+                        auth.Password(Configuration["RabbitMQConf:Password"]);
+                    });
+                    config2.ReceiveEndpoint("add-person-call-guide-queue",
+                    consum =>{
+                        consum.ConfigureConsumer<AddPersonCallGuideConsumer>(context);
+                    });
+                    config2.ReceiveEndpoint("remove-person-call-guide-queue",
+                    consum =>{
+                        consum.ConfigureConsumer<RemovePersonCallGuideConsumer>(context);
+                    });
+                    config2.ReceiveEndpoint("add-communication-info-queue",
+                    consum =>{
+                        consum.ConfigureConsumer<AddCommunicationInfoConsumer>(context);
+                    });
+                    config2.ReceiveEndpoint("remove-communication-info-queue",
+                    consum =>{
+                        consum.ConfigureConsumer<RemoveCommunicationInfoConsumer>(context);
+                    });
+                });
             });
         }
 

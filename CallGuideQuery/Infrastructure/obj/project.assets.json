@@ -470,11 +470,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Infrastructure\\Infrastructure.csproj",
+      "projectPath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Infrastructure\\Infrastructure.csproj",
       "packagesPath": "C:\\Users\\soysa\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\soysa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -491,8 +491,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Domain\\Domain.csproj": {
-              "projectPath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Domain\\Domain.csproj"
+            "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Domain\\Domain.csproj"
             }
           }
         }

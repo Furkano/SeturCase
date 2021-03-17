@@ -7,6 +7,7 @@ using Application.Services;
 using Domain.Interfaces;
 using Infrastructure.Context;
 using Infrastructure.Repository;
+using MassTransit;
 using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -18,6 +19,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Setur.Events;
 
 namespace Presentation
 {
@@ -46,6 +48,27 @@ namespace Presentation
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Call Guide Command Presentation", Version = "v1" });
+            });
+
+            services.AddMassTransit(config=>{
+                config.UsingRabbitMq((context,config2) =>
+                {
+                    // new Uri(Configuration["RabbitMQConf:Uri"]
+                    // "amqp://guest:guest22@localhost:15672"
+                    config2.Host(new Uri(Configuration["RabbitMQConf:Uri"]),
+                    auth=>{
+                        auth.Username(Configuration["RabbitMQConf:Username"]);
+                        auth.Password(Configuration["RabbitMQConf:Password"]);
+                    });
+                    config2.Publish<AddPersonCallGuideEvent>(extype =>
+                    {
+                        extype.ExchangeType = "fanout";
+                    });
+                    config2.Publish<RemovePersonCallGuideEvent>(extype =>
+                    {
+                        extype.ExchangeType = "fanout";
+                    });
+                });
             });
         }
 

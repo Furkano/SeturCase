@@ -4,8 +4,11 @@ using System.Threading.Tasks;
 using Application.Requests;
 using Domain.Entity;
 using Domain.Interfaces;
+using Mapster;
+using MassTransit;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using Setur.Events;
 
 namespace Application.Services
 {
@@ -13,13 +16,16 @@ namespace Application.Services
     {
         private readonly ICallGuideRepository<CallGuide> callGuideRepository;
         private readonly ILogger<AddPersonCallGuideService> logger;
+        private readonly IBus bus;
         public AddPersonCallGuideService(
             ICallGuideRepository<CallGuide> _callGuideRepository,
-            ILogger<AddPersonCallGuideService> _logger
+            ILogger<AddPersonCallGuideService> _logger,
+            IBus _bus
             )
         {
             callGuideRepository = _callGuideRepository ?? throw new ArgumentNullException(nameof(_callGuideRepository));
             logger = _logger ?? throw new ArgumentNullException(nameof(_logger));
+            bus = _bus ?? throw new ArgumentNullException(nameof(_bus));
         }
         public async Task<CallGuide> Handle(AddPersonCallGuideRequest request, CancellationToken cancellationToken)
         {
@@ -33,6 +39,7 @@ namespace Application.Services
                     UserId = request.UserId
                 };
                 var result = await callGuideRepository.Create(callGuide);
+                await bus.Publish(callGuide.Adapt<AddPersonCallGuideEvent>(),cancellationToken);
                 return result;
             }
             catch (Exception exception)
