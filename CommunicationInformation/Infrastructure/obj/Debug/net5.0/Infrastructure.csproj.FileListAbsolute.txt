@@ -1,0 +1,15 @@
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Infrastructure\obj\Debug\net5.0\Infrastructure.csprojAssemblyReference.cache
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Infrastructure\obj\Debug\net5.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfoInputs.cache
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Infrastructure\obj\Debug\net5.0\Infrastructure.AssemblyInfo.cs
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Infrastructure\bin\Debug\net5.0\Infrastructure.deps.json
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Infrastructure\bin\Debug\net5.0\Infrastructure.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Infrastructure\bin\Debug\net5.0\ref\Infrastructure.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Infrastructure\bin\Debug\net5.0\Infrastructure.pdb
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Infrastructure\bin\Debug\net5.0\Domain.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Infrastructure\bin\Debug\net5.0\Domain.pdb
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Infrastructure\obj\Debug\net5.0\Infrastructure.csproj.CopyComplete
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Infrastructure\obj\Debug\net5.0\Infrastructure.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Infrastructure\obj\Debug\net5.0\ref\Infrastructure.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CommunicationInformation\Infrastructure\obj\Debug\net5.0\Infrastructure.pdb
