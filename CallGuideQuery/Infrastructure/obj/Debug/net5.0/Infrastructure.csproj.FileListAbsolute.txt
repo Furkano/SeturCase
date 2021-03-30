@@ -13,3 +13,8 @@ C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Infrastructure\obj\D
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Infrastructure\obj\Debug\net5.0\Infrastructure.dll
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Infrastructure\obj\Debug\net5.0\ref\Infrastructure.dll
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Infrastructure\obj\Debug\net5.0\Infrastructure.pdb
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Infrastructure\bin\Debug\net5.0\Infrastructure.runtimeconfig.json
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Infrastructure\bin\Debug\net5.0\Infrastructure.runtimeconfig.dev.json
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Infrastructure\bin\Debug\net5.0\Application.dll
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Infrastructure\bin\Debug\net5.0\Application.pdb
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Infrastructure\obj\Debug\net5.0\Infrastructure.genruntimeconfig.cache

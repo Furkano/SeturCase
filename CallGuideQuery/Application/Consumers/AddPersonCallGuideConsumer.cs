@@ -1,8 +1,8 @@
 using System;
 using System.Threading.Tasks;
+using Application.Interfaces;
 using Application.Requests;
 using Domain.Entity;
-using Domain.Interfaces;
 using Mapster;
 using MassTransit;
 using Microsoft.Extensions.Logging;
@@ -13,11 +13,11 @@ namespace Application.Consumers
     public class AddPersonCallGuideConsumer : IConsumer<AddPersonCallGuideEvent>
     {
         private readonly ILogger<AddPersonCallGuideConsumer> logger;
-        private readonly ICallGuideMongoDbRepository<CallGuide> repository;
+        private readonly IMongoRepository repository;
 
         public AddPersonCallGuideConsumer
         (
-            ICallGuideMongoDbRepository<CallGuide> _repository,
+            IMongoRepository _repository,
             ILogger<AddPersonCallGuideConsumer> _logger
         )
         {
@@ -27,16 +27,16 @@ namespace Application.Consumers
 
         public async Task Consume(ConsumeContext<AddPersonCallGuideEvent> context)
         {
-            var message = context.Message.Adapt<CreateCallGuideRequest>();
+            Console.WriteLine("person geldi");
             try
             {
                 var callGuide  = new CallGuide
                 {
-                    Id = message.Id,
-                    Firstname = message.Firstname,
-                    Lastname = message.Lastname,
-                    Company = message.Company,
-                    UserId = message.UserId
+                    Id = context.Message.Id,
+                    Firstname = context.Message.Firstname,
+                    Lastname = context.Message.Lastname,
+                    Company = context.Message.Company,
+                    UserId = context.Message.UserId
                 };
                 var result  = await repository.CreateAsync(callGuide);
                 if(result)
@@ -45,7 +45,7 @@ namespace Application.Consumers
                 }
                 else
                 {
-                    logger.LogWarning($"An Error while -{message.Firstname}- named person inserting database!!!");
+                    logger.LogWarning($"An Error while -{context.Message.Firstname}- named person inserting database!!!");
                 }
                 
             }

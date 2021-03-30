@@ -1,19 +1,16 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.Reflection;
 using Application.Consumers;
-using Domain.Interfaces;
+using Application.Interfaces;
+using Application.Services;
 using Infrastructure.Repository;
 using MassTransit;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 
@@ -36,30 +33,27 @@ namespace Presentation
                 serviceProvider.GetRequiredService<IOptions<MongoSettings>>().Value);
             
 
-            services.AddScoped(typeof(ICallGuideMongoDbRepository<>),typeof(CallGuideMongoDbRepository<>));
+            services.AddScoped(typeof(IMongoRepository),typeof(CallGuideMongoDbRepository));
+            services.AddScoped(typeof(IRaportRepository),typeof(RaportRepository));
 
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CallGuideQuery Presentation", Version = "v1" });
             });
+            services.AddMediatR(typeof(GetAllCallGuideWithUserIdService).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(GetDetailAllCallGuidehUserIdService).GetTypeInfo().Assembly);
 
             services.AddMassTransit(config=>{
+                config.AddConsumer<AddPersonCallGuideConsumer>();
+                config.AddConsumer<RemovePersonCallGuideConsumer>();
+                config.AddConsumer<AddCommunicationInfoConsumer>();
+                config.AddConsumer<RemoveCommunicationInfoConsumer>();
+                config.AddConsumer<CreatedRaportConsumer>();
                 config.UsingRabbitMq((context,config2) =>
                 {
-                    config2.Host(new Uri(Configuration["RabbitMQConf:Uri"]),
-                    auth=>{
-                        auth.Username(Configuration["RabbitMQConf:Username"]);
-                        auth.Password(Configuration["RabbitMQConf:Password"]);
-                    });
-                    config2.ReceiveEndpoint("add-person-call-guide-queue",
-                    consum =>{
-                        consum.ConfigureConsumer<AddPersonCallGuideConsumer>(context);
-                    });
-                    config2.ReceiveEndpoint("remove-person-call-guide-queue",
-                    consum =>{
-                        consum.ConfigureConsumer<RemovePersonCallGuideConsumer>(context);
-                    });
+                    config2.Host(Configuration["RabbitMQConf:Uri"]);
+                    config2.UseHealthCheck(context);
                     config2.ReceiveEndpoint("add-communication-info-queue",
                     consum =>{
                         consum.ConfigureConsumer<AddCommunicationInfoConsumer>(context);
@@ -68,8 +62,22 @@ namespace Presentation
                     consum =>{
                         consum.ConfigureConsumer<RemoveCommunicationInfoConsumer>(context);
                     });
+                    config2.ReceiveEndpoint("add-person-CallGuide-queue",
+                    consum =>{
+                        consum.ConfigureConsumer<AddPersonCallGuideConsumer>(context);
+                    });
+                    config2.ReceiveEndpoint("remove-person-CallGuide-queue",
+                    consum =>{
+                        consum.ConfigureConsumer<RemovePersonCallGuideConsumer>(context);
+                    });
+                    config2.ReceiveEndpoint("created-raport-queue",
+                        consum => {
+                        consum.ConfigureConsumer<CreatedRaportConsumer>(context);
+                    });
                 });
             });
+
+            services.AddMassTransitHostedService();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

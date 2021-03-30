@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
+using Application.Interfaces;
 using Application.Requests;
 using Domain.Entity;
-using Domain.Interfaces;
 using MediatR;
 using Microsoft.Extensions.Logging;
 
@@ -12,12 +12,12 @@ namespace Application.Services
 {
     public class GetDetailAllCallGuidehUserIdService : IRequestHandler<GetDetailAllCallGuidehUserIdRequest, IEnumerable<CallGuide>>
     {
-        private readonly ICallGuideMongoDbRepository<CallGuide> callGuideRepository;
+        private readonly IMongoRepository callGuideRepository;
         private readonly ILogger<GetDetailAllCallGuidehUserIdService> logger;
         
         public GetDetailAllCallGuidehUserIdService
         (
-            ICallGuideMongoDbRepository<CallGuide> _callGuideRepository,
+            IMongoRepository _callGuideRepository,
             ILogger<GetDetailAllCallGuidehUserIdService> _logger
         )
         {

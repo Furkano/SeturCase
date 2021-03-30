@@ -1,8 +1,8 @@
 using System;
 using System.Threading.Tasks;
+using Application.Interfaces;
 using Application.Requests;
 using Domain.Entity;
-using Domain.Interfaces;
 using Mapster;
 using MassTransit;
 using Microsoft.Extensions.Logging;
@@ -13,11 +13,11 @@ namespace Application.Consumers
     public class AddCommunicationInfoConsumer : IConsumer<AddCommunicationInfoEvent>
     {
         private readonly ILogger<AddCommunicationInfoConsumer> logger;
-        private readonly ICallGuideMongoDbRepository<CallGuide> callGuideRepository;
+        private readonly IMongoRepository callGuideRepository;
 
         public AddCommunicationInfoConsumer
         (
-            ICallGuideMongoDbRepository<CallGuide> _callGuideRepository,
+            IMongoRepository _callGuideRepository,
             ILogger<AddCommunicationInfoConsumer> _logger
         )
         {
@@ -26,6 +26,8 @@ namespace Application.Consumers
         }
         public async Task Consume(ConsumeContext<AddCommunicationInfoEvent> context)
         {
+            Console.WriteLine("info geldi");
+            
             var message = context.Message.Adapt<AddComInfoRequest>();
             try
             {

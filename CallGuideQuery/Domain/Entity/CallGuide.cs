@@ -1,5 +1,6 @@
 #nullable enable
 using System.Collections.Generic;
+using MongoDB.Bson.Serialization.Attributes;
 
 namespace Domain.Entity
 {
@@ -9,8 +10,10 @@ namespace Domain.Entity
         public string Lastname { get; set; } = null!;
         public string Company { get; set; } = null!;
         public int UserId { get; set; }
+        
         public List<CommunicationInfo>? CommunicationInfos { get; set; }
-
+        
+        
         public CallGuide()
         {
             CommunicationInfos = new List<CommunicationInfo>();

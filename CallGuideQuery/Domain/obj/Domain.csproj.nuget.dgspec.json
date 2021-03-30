@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Domain\\Domain.csproj": {}
+    "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Domain\\Domain.csproj": {
+    "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\soysa\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\soysa\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "MongoDB.Bson": {
+              "target": "Package",
+              "version": "[2.12.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

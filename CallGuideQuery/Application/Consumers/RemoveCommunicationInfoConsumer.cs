@@ -1,8 +1,7 @@
 using System;
 using System.Threading.Tasks;
+using Application.Interfaces;
 using Application.Requests;
-using Domain.Entity;
-using Domain.Interfaces;
 using Mapster;
 using MassTransit;
 using Microsoft.Extensions.Logging;
@@ -13,10 +12,10 @@ namespace Application.Consumers
     public class RemoveCommunicationInfoConsumer : IConsumer<RemoveCommunicationInfoEvent>
     {
         private readonly ILogger<RemoveCommunicationInfoConsumer> logger;
-        private readonly ICallGuideMongoDbRepository<CallGuide> callGuideRepository;
+        private readonly IMongoRepository callGuideRepository;
         public RemoveCommunicationInfoConsumer
         (
-            ICallGuideMongoDbRepository<CallGuide> _callGuideRepository,
+            IMongoRepository _callGuideRepository,
             ILogger<RemoveCommunicationInfoConsumer> _logger
         )
         {

@@ -3,9 +3,7 @@ C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Application\bin\Debu
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Application\bin\Debug\net5.0\ref\Application.dll
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Application\bin\Debug\net5.0\Application.pdb
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Application\bin\Debug\net5.0\Domain.dll
-C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Application\bin\Debug\net5.0\Infrastructure.dll
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Application\bin\Debug\net5.0\Domain.pdb
-C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Application\bin\Debug\net5.0\Infrastructure.pdb
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Application\obj\Debug\net5.0\Application.csprojAssemblyReference.cache
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Application\obj\Debug\net5.0\Application.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Application\obj\Debug\net5.0\Application.AssemblyInfoInputs.cache
@@ -15,3 +13,6 @@ C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Application\obj\Debu
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Application\obj\Debug\net5.0\Application.dll
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Application\obj\Debug\net5.0\ref\Application.dll
 C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Application\obj\Debug\net5.0\Application.pdb
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Application\bin\Debug\net5.0\Application.runtimeconfig.json
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Application\bin\Debug\net5.0\Application.runtimeconfig.dev.json
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\CallGuideQuery\Application\obj\Debug\net5.0\Application.genruntimeconfig.cache

@@ -6,5 +6,9 @@ namespace Application.Requests
     public class GetAllCallGuideWithUserIdRequest : IRequest<List<string>>
     {
         public int UserId { get; set; }
+        public GetAllCallGuideWithUserIdRequest(int model)
+        {
+            UserId = model;
+        }
     }
 }

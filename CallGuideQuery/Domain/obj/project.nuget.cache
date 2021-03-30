@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "iW+dvsr3jDWKKd/it4KCEYo7gNx/N4xK6qTgXD3vVeE2+blC2UkqVhRN5eCnpLQrvy1FwLyQWRfKZclQGm5I2w==",
+  "dgSpecHash": "qIR5OUBYaGEyxFCUUDyGODJUzq9JQWjEVI8cjv0RzMKmeeF92hemdcxJs6c4kF7HA/zt9qIwE2IHszgZ4td4JQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Domain\\Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideQuery\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\soysa\\.nuget\\packages\\mongodb.bson\\2.12.1\\mongodb.bson.2.12.1.nupkg.sha512",
+    "C:\\Users\\soysa\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

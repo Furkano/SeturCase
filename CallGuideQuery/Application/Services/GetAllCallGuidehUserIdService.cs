@@ -4,22 +4,20 @@ using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
 using Application.Requests;
-using Domain.Entity;
-using Domain.Interfaces;
 using MediatR;
 using Microsoft.Extensions.Logging;
-using System.Data.Entity;
+using Application.Interfaces;
 
 namespace Application.Services
 {
     public class GetAllCallGuideWithUserIdService : IRequestHandler<GetAllCallGuideWithUserIdRequest, List<string>>
     {
-        private readonly ICallGuideMongoDbRepository<CallGuide> callGuideRepository;
+        private readonly IMongoRepository callGuideRepository;
         private readonly ILogger<GetAllCallGuideWithUserIdService> logger;
         
         public GetAllCallGuideWithUserIdService
         (
-            ICallGuideMongoDbRepository<CallGuide> _callGuideRepository,
+            IMongoRepository _callGuideRepository,
             ILogger<GetAllCallGuideWithUserIdService> _logger
         )
         {
@@ -36,7 +34,6 @@ namespace Application.Services
                 data.ForEach(f=>{
                     response.Add(f.Firstname+"  "+f.Lastname);
                 });
-
             }
             catch (Exception ex)
             {

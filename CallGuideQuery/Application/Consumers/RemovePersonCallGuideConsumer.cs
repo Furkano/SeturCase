@@ -1,8 +1,7 @@
 using System;
 using System.Threading.Tasks;
+using Application.Interfaces;
 using Application.Requests;
-using Domain.Entity;
-using Domain.Interfaces;
 using Mapster;
 using MassTransit;
 using Microsoft.Extensions.Logging;
@@ -14,10 +13,10 @@ namespace Application.Consumers
     {
 
         private readonly ILogger<RemovePersonCallGuideConsumer> logger;
-        private readonly ICallGuideMongoDbRepository<CallGuide> callGuideRepository;
+        private readonly IMongoRepository callGuideRepository;
         public RemovePersonCallGuideConsumer
         (
-            ICallGuideMongoDbRepository<CallGuide> _callGuideRepository,
+            IMongoRepository _callGuideRepository,
             ILogger<RemovePersonCallGuideConsumer> _logger
         )
         {
