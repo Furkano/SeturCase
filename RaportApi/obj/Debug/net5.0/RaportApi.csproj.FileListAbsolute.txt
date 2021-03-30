@@ -1,0 +1,7 @@
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\RaportApi\obj\Debug\net5.0\RaportApi.csprojAssemblyReference.cache
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\RaportApi\obj\Debug\net5.0\RaportApi.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\RaportApi\obj\Debug\net5.0\RaportApi.AssemblyInfoInputs.cache
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\RaportApi\obj\Debug\net5.0\RaportApi.AssemblyInfo.cs
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\RaportApi\obj\Debug\net5.0\RaportApi.csproj.CoreCompileInputs.cache
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\RaportApi\obj\Debug\net5.0\RaportApi.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\soysa\OneDrive\Masaüstü\SeturCase\RaportApi\obj\Debug\net5.0\RaportApi.MvcApplicationPartsAssemblyInfo.cache
