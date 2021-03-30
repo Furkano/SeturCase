@@ -49,26 +49,19 @@ namespace Presentation
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CommunicationInfo Presentation", Version = "v1" });
             });
+            
+            services.AddMediatR(typeof(AddCommunicationInfoService).GetTypeInfo().Assembly);
+            services.AddMediatR(typeof(RemoveCommunicationInfoService).GetTypeInfo().Assembly);
+
             services.AddMassTransit(config =>
             {
                 config.UsingRabbitMq((context, config2) =>
                 {
-                    config2.Host(new Uri(Configuration["RabbitMQConf:Uri"]),
-                    auth =>
-                    {
-                        auth.Username(Configuration["RabbitMQConf:Username"]);
-                        auth.Password(Configuration["RabbitMQConf:Password"]);
-                    });
-                    config2.Publish<AddCommunicationInfoEvent>(extype =>
-                    {
-                        extype.ExchangeType = "fanout";
-                    });
-                    config2.Publish<RemoveCommunicationInfoEvent>(extype =>
-                    {
-                        extype.ExchangeType = "fanout";
-                    });
+                    config2.Host(Configuration["RabbitMQConf:Uri"]);
+                    config2.UseHealthCheck(context);
                 });
             });
+            services.AddMassTransitHostedService();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

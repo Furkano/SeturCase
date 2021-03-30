@@ -42,6 +42,7 @@ namespace Application.Services
                 var result = await repository.Create(comInfo);
                 if(result!=null){
                     await bus.Publish(result.Adapt<AddCommunicationInfoEvent>(),cancellationToken);
+                    Console.WriteLine("info publish edildi.");
                     return result;
                 }
                 else
