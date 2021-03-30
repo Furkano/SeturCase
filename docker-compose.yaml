@@ -10,7 +10,7 @@ services:
       MONGO_INITDB_ROOT_PASSWORD: secretdb
     ports:
       - 27017:27017
-  
+
   commanddb:
     image: postgres
     container_name: commanddb
@@ -20,7 +20,7 @@ services:
       POSTGRES_PASSWORD: pa55w0rd
     ports: 
       - 5432:5432
-  
+
   infodb:
     image: postgres
     container_name: infodb
@@ -31,34 +31,24 @@ services:
     ports: 
       - 5433:5432
 
+  raportdb:
+    image: postgres
+    container_name: raportdb
+    restart: always
+    environment: 
+      POSTGRES_USER: masaustu
+      POSTGRES_PASSWORD: pa55w0rd
+    ports: 
+      - 5434:5432
+
   myrabbitmq:
-    image: rabbitmq:3-management
+    image: rabbitmq:3-management-alpine
     container_name: myrabbitmq
     volumes:
-      - ./.docker/rabbitmq/etc/:/etc/rabbitmq/
-      - ./.docker/rabbitmq/data/:/var/lib/rabbitmq/
-      - ./.docker/rabbitmq/logs/:/var/log/rabbitmq/
-    environment:
-      RABBITMQ_DEFAULT_USER: guest
-      RABBITMQ_DEFAULT_PASS: guest22
+      - 'rabbitmq_data:/data'
     ports: 
       - 5672:5672
-
-  call_guide_command_api:
-    container_name: call_guide_command_api
-    build: CallGuideCommand/
-    ports: 
-      - "8010:80"
-    environment:
-      - ASPNETCORE_URLS=http://+
-      - ASPNETCORE_ENVIRONMENT=Development
-      - PostgreSqlConnectionString=User ID =masaustu;Password=pa55w0rd;Server=commanddb;Database=CallGuideCommand;Integrated Security=true;Pooling=true;
-      - RabbitMQConf:Uri=rabbitmq://guest:guest22@myrabbitmq/
-    volumes:
-      - ${APPDATA}\microsoft\UserSecrets\:/root/.microsoft/usersecrets
-    depends_on: 
-      - commanddb
-      - myrabbitmq
+      - 15672:15672
 
   call_guide_query_api:
     container_name: call_guide_query_api
@@ -69,11 +59,27 @@ services:
       - ASPNETCORE_URLS=http://+
       - ASPNETCORE_ENVIRONMENT=Development
       - MongoSettings:ConnectionString=mongodb://mongoadmindb:secretdb@querydb:27017/?authSource=admin
-      - RabbitMQConf:Uri=rabbitmq://guest:guest22@myrabbitmq/
+      - RabbitMQConf:Uri=amqp://guest:guest@myrabbitmq:5672
     volumes:
       - ${APPDATA}\microsoft\UserSecrets\:/root/.microsoft/usersecrets
     depends_on: 
       - querydb
+      - myrabbitmq
+
+  call_guide_command_api:
+    container_name: call_guide_command_api
+    build: CallGuideCommand/
+    ports: 
+      - "8010:80"
+    environment:
+      - ASPNETCORE_URLS=http://+
+      - ASPNETCORE_ENVIRONMENT=Development
+      - PostgreSqlConnectionString=User ID =masaustu;Password=pa55w0rd;Server=commanddb;Database=CallGuideCommand;Integrated Security=true;Pooling=true;
+      - RabbitMQConf:Uri=amqp://guest:guest@myrabbitmq:5672
+    volumes:
+      - ${APPDATA}\microsoft\UserSecrets\:/root/.microsoft/usersecrets
+    depends_on: 
+      - commanddb
       - myrabbitmq
 
   info_api:
@@ -85,9 +91,25 @@ services:
       - ASPNETCORE_URLS=http://+
       - ASPNETCORE_ENVIRONMENT=Development
       - PostgreSqlConnectionString=User ID =masaustu;Password=pa55w0rd;Server=infodb;Database=cominfo;Integrated Security=true;Pooling=true;
-      - RabbitMQConf:Uri=rabbitmq://guest:guest22@myrabbitmq/
+      - RabbitMQConf:Uri=amqp://guest:guest@myrabbitmq:5672
     volumes:
       - ${APPDATA}\microsoft\UserSecrets\:/root/.microsoft/usersecrets
     depends_on: 
       - infodb
       - myrabbitmq
+
+  raport_api:
+    container_name: raport_api
+    build: RaportApi/
+    ports: 
+      - "8040:80"
+    environment: 
+      - ASPNETCORE_URLS=http://+
+      - ASPNETCORE_ENVIRONMENT=Development
+      - PostgreSqlConnectionString=User ID =masaustu;Password=pa55w0rd;Server=raportdb;Database=raport;Integrated Security=true;Pooling=true;
+      - RabbitMQConf:Uri=amqp://guest:guest@myrabbitmq:5672
+    depends_on: 
+      - raportdb
+      - myrabbitmq
+volumes:
+  rabbitmq_data:
