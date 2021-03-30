@@ -1,14 +1,14 @@
-FROM mcr.microsoft.com/dotnet/aspnet:5.0-focal AS base
+FROM mcr.microsoft.com/dotnet/aspnet:5.0-buster-slim AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:5.0-focal AS build
+FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
 WORKDIR /src
-COPY ["RaportApi/RaportApi.csproj", "RaportApi/"]
-RUN dotnet restore "RaportApi/RaportApi.csproj"
+COPY ["RaportApi.csproj", "./"]
+RUN dotnet restore "RaportApi.csproj"
 COPY . .
-WORKDIR "/src/RaportApi"
+WORKDIR "/src/"
 RUN dotnet build "RaportApi.csproj" -c Release -o /app/build
 
 FROM build AS publish
