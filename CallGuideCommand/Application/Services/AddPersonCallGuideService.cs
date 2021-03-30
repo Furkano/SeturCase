@@ -40,6 +40,7 @@ namespace Application.Services
                 };
                 var result = await callGuideRepository.Create(callGuide);
                 await bus.Publish(callGuide.Adapt<AddPersonCallGuideEvent>(),cancellationToken);
+                logger.LogInformation("person publish edildi.");
                 return result;
             }
             catch (Exception exception)

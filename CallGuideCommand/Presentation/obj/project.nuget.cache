@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "+VDcjOuGPfBf5cp1SpyFuP1uALq38AXny4DnIDOEsGHi+k5o5IC9CrBzBI9zwI4bi2x5AZFndOC0Bh3I15KB1g==",
+  "dgSpecHash": "cZ1DHpc3C4v03heevboJYgt5R5WSc6RQjeYqTIIh0FdHQDsfbCw3KAPfCFJrmQ28t9nH3jxmJempmKU3dLfGww==",
   "success": true,
   "projectFilePath": "c:\\Users\\soysa\\OneDrive\\Masaüstü\\SeturCase\\CallGuideCommand\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,7 @@
     "C:\\Users\\soysa\\.nuget\\packages\\mapster\\7.1.5\\mapster.7.1.5.nupkg.sha512",
     "C:\\Users\\soysa\\.nuget\\packages\\mapster.core\\1.1.5\\mapster.core.1.1.5.nupkg.sha512",
     "C:\\Users\\soysa\\.nuget\\packages\\masstransit\\7.1.3-develop.3212\\masstransit.7.1.3-develop.3212.nupkg.sha512",
+    "C:\\Users\\soysa\\.nuget\\packages\\masstransit.aspnetcore\\7.1.3-develop.3212\\masstransit.aspnetcore.7.1.3-develop.3212.nupkg.sha512",
     "C:\\Users\\soysa\\.nuget\\packages\\masstransit.extensions.dependencyinjection\\7.1.3-develop.3212\\masstransit.extensions.dependencyinjection.7.1.3-develop.3212.nupkg.sha512",
     "C:\\Users\\soysa\\.nuget\\packages\\masstransit.rabbitmq\\7.1.3-develop.3212\\masstransit.rabbitmq.7.1.3-develop.3212.nupkg.sha512",
     "C:\\Users\\soysa\\.nuget\\packages\\mediatr\\9.0.0\\mediatr.9.0.0.nupkg.sha512",
@@ -27,6 +28,10 @@
     "C:\\Users\\soysa\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\soysa\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.1\\microsoft.extensions.dependencyinjection.5.0.1.nupkg.sha512",
     "C:\\Users\\soysa\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\soysa\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks\\3.1.10\\microsoft.extensions.diagnostics.healthchecks.3.1.10.nupkg.sha512",
+    "C:\\Users\\soysa\\.nuget\\packages\\microsoft.extensions.diagnostics.healthchecks.abstractions\\3.1.10\\microsoft.extensions.diagnostics.healthchecks.abstractions.3.1.10.nupkg.sha512",
+    "C:\\Users\\soysa\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.10\\microsoft.extensions.fileproviders.abstractions.3.1.10.nupkg.sha512",
+    "C:\\Users\\soysa\\.nuget\\packages\\microsoft.extensions.hosting.abstractions\\3.1.10\\microsoft.extensions.hosting.abstractions.3.1.10.nupkg.sha512",
     "C:\\Users\\soysa\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\soysa\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\soysa\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
